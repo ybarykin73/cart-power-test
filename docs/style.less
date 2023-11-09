@@ -1,9 +1,66 @@
+@primary-text-color: #212121;
+
 *,::after,::before {
   box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../docs/assets/fonts/Roboto-Light.ttf');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../docs/assets/fonts/Roboto-Medium.ttf');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../docs/assets/fonts/Roboto-Bold.ttf');
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
 }
 
 body {
   margin: 0;
   padding: 0;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
 }
-    
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.svg-sprite {
+  display: none
+}
+
+@import '/docs/assets//style/header.less';
+@import '/docs/assets//style/location.less';
+@import '/docs/assets//style/menu.less';
+@import '/docs/assets//style/contact.less';
+@import '/docs/assets//style/search.less';
+@import '/docs/assets//style/user.less';
