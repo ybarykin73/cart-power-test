@@ -5,8 +5,18 @@
   flex-basis: 560px;
   flex-grow: 0;
   border-radius: 12px;
-  margin-left: 100px;
-  position: relative;
+
+  @media screen and (min-width: 560px) {
+    position: relative;
+  }
+
+  @media screen and (min-width: 786px) {
+    margin-inline-start: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-inline-start: 100px;
+  }
 
   &__menu-button {
     border: none;
@@ -17,10 +27,10 @@
     padding: 13px;
     padding-inline-start: 40px;
     position: relative;
-    border-radius: 12px 0 0 12px;
+    border-radius: 3px;
 
-    &:hover + .search__menu-list {
-      display: grid;
+    @media screen and (min-width: 560px) {
+      border-radius: 12px 0 0 12px;
     }
   }
 
@@ -43,6 +53,10 @@
     display: none;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
+
+    &.active {
+      display: grid;
+    }
   }
 
   &__menu-list-link {
@@ -53,9 +67,58 @@
     }
   }
 
+  &__wrapper {
+    display: none;
+
+    &.active {
+      position: absolute;
+      top: 20px;
+      right: 0;
+      bottom: 20px;
+      left: 0;
+      display: flex;
+      justify-content: flex-start;
+      align-items: stretch;
+      z-index: 10;
+    }
+
+    @media screen and (min-width: 560px) {
+      flex-grow: 1;
+      position: relative;
+      display: block;
+    }
+  }
+
+  &__wrapper-close-button {
+    background-color: #eee;
+    border: none;
+    flex-shrink: 0;
+    padding: 0 15px;
+
+    @media screen and (min-width: 560px) {
+      display: none;
+    }
+  }
+
+  &__wrapper-mobile-open {
+    margin-left: auto;
+    border: none;
+    background-color: transparent;
+
+    @media screen and (min-width: 560px) {
+      display: none;
+    }
+  }
+
   &__form {
-    flex-grow: 1;
+    height: 100%;
     position: relative;
+    flex-grow: 1;
+
+
+    @media screen and (max-width: 560px) {
+
+    }
   }
 
   &__form-input {
@@ -65,7 +128,11 @@
     outline: none;
     padding: 0 20px;
     padding-inline-end: 44px;
-    border-radius: 0 12px 12px 0;
+    border-radius: 3px;
+
+    @media screen and (min-width: 560px) {
+      border-radius: 0 12px 12px 0;
+    }
 
     &::placeholder {
       color: #919191;
@@ -84,7 +151,5 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
-
   }
 }

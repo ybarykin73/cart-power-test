@@ -1,12 +1,20 @@
 .user {
+  margin-inline-start: auto;
 
-  margin-left: auto;
+  @media screen and (max-width: 992px) {
+    margin-inline-start: 10px;
+  }
 
   &__wrapper {
     display: grid;
-    grid-template-columns: 30px 1fr 1fr 1fr;
-    grid-gap: 15px;
+    grid-template-columns: repeat(4, 30px);
+    grid-gap: 5px;
     align-items: center;
+
+    @media screen and (min-width: 992px) {
+      grid-template-columns: 30px 1fr 1fr 1fr;
+      grid-gap: 15px;
+    }
   }
 
   &__address-link {
@@ -14,10 +22,6 @@
     align-items: center;
     justify-content: flex-start;
     color: @primary-text-color;
-
-    .icon {
-      margin-inline-start: 5px;
-    }
   }
 
   &__item {
@@ -26,8 +30,14 @@
     justify-content: flex-start;
 
     .icon {
-      margin-inline-start: 5px;
+      display: block;
       flex-grow: 0;
+      width: 20px;
+      height: 20px;
+
+      @media screen and (min-width: 992px) {
+        margin-inline-start: 5px;
+      }
     }
 
     &--profile {
@@ -36,6 +46,18 @@
       &:hover .user__item-submenu {
         display: block;
       }
+    }
+
+    &--cart {
+      @media screen and (max-width: 992px) {
+        position: relative;
+      }
+    }
+  }
+
+  &__item-text {
+    @media screen and (max-width: 992px) {
+      display: none;
     }
   }
 
@@ -62,9 +84,15 @@
 
   &__counter {
     display: inline-block;
-    position: relative;
+    position: absolute;
     margin-inline-start: 5px;
-    top: 10px;
+    top: 0;
+    right: -5px;
+
+    @media screen and (min-width: 992px) {
+      position: relative;
+      top: 10px;
+    }
   }
 
   &__counter-count {

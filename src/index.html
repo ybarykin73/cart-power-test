@@ -76,6 +76,10 @@
                   <path d="M428.15,269.73a15,15,0,0,1-15-15c0-89.69-73-162.66-162.65-162.66a15,15,0,0,1,0-30c106.23,0,192.65,86.43,192.65,192.66A15,15,0,0,1,428.15,269.73Z"></path>
                 </g>
             </symbol>
+            <symbol id="close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                <title></title>
+                <path d="M114,100l49-49a9.9,9.9,0,0,0-14-14L100,86,51,37A9.9,9.9,0,0,0,37,51l49,49L37,149a9.9,9.9,0,0,0,14,14l49-49,49,49a9.9,9.9,0,0,0,14-14Z"></path>
+              </symbol>
         </svg>
     </div>
     <header class="header">
@@ -122,7 +126,7 @@
                 </div>
                 <div class="search">
                     <div class="search__menu">
-                        <button class="search__menu-button">
+                        <button class="search__menu-button search__menu-button-js">
                             <div class="search__menu-button-icon">
                                 <svg width="19px" height="19px" class="icon">
                                     <use xlink:href="#menu-icon"></use>
@@ -138,14 +142,26 @@
                             <li class="search__menu-list-item"><a class="search__menu-list-link" href="#">Lorem, ipsum.</a></li>
                         </ul>
                     </div>
-                    <form class="search__form" method="post">
-                        <input class="search__form-input" placeholder="Например, двухъярусная кровать" type="text">
-                        <button class="search__form-button" aria-label="Search button">
-                            <svg width="19px" height="19px" class="icon">
-                                <use xlink:href="#search"></use>
+                    <div class="search__wrapper">
+                        <form class="search__form" method="post">
+                            <input class="search__form-input" placeholder="Например, двухъярусная кровать" type="text">
+                            <button class="search__form-button" aria-label="Search button">
+                                <svg width="19px" height="19px" class="icon">
+                                    <use xlink:href="#search"></use>
+                                </svg>
+                            </button>
+                        </form>
+                        <button class="search__wrapper-close-button search__wrapper-close-button-js">
+                            <svg width="20px" height="20px" class="icon">
+                                <use xlink:href="#close"></use>
                             </svg>
                         </button>
-                    </form>
+                    </div>
+                    <button class="search__wrapper-mobile-open search__wrapper-mobile-open-js">
+                        <svg width="20px" height="20px" class="icon">
+                            <use xlink:href="#search"></use>
+                        </svg>
+                    </button>
                 </div>
                 <div class="user">
                     <div class="user__wrapper">
@@ -158,14 +174,14 @@
                         </div>
                         <div class="user__item user__item--address">
                             <a class="user__address-link" href="#">
-                                Адреса
+                                <div class="user__item-text">Адреса</div>
                                 <svg width="14px" height="14px" class="icon">
                                     <use xlink:href="#map-pin"></use>
                                 </svg>
                             </a>
                         </div>
                         <div class="user__item user__item--profile">
-                            Профиль
+                            <div class="user__item-text">Профиль</div>
                             <svg width="19px" height="19px" class="icon">
                                 <use xlink:href="#user"></use>
                             </svg>
@@ -190,11 +206,10 @@
                                     <use xlink:href="#cart"></use>
                                 </svg>
                             </a>
-                                <div class="user__counter">
-                                    <span class="user__counter-count"></span>
-                                    <span class="user__counter-text">1</span>
-                                </div>
-                            
+                            <div class="user__counter">
+                                <span class="user__counter-count"></span>
+                                <span class="user__counter-text">1</span>
+                            </div>
                         </div>
                     </div>
                 </div>
