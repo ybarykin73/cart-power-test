@@ -2,17 +2,17 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    entry: './docs/index.js',
+    entry: './src/index.js',
     mode: 'development',
     devtool: 'inline-source-map',
     devServer: {
-        static: './docs',
+        static: './src',
         open: true,
     },
 
     output: {
         filename: '[name].bundle.js',
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'docs'),
         clean: true,
     },
 
@@ -44,7 +44,7 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
           title: 'Output Management',
-          template: './docs/index.html'
+          template: './src/index.html'
         }),
     ],
 };
