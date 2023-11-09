@@ -51,7 +51,16 @@ button {
 .container {
   max-width: 1440px;
   width: 100%;
+  padding: 0 10px;
   margin: 0 auto;
+
+  @media screen and (max-width: 1200px) {
+    max-width: 960px;
+  }
+
+  @media screen and (max-width: 992px) {
+    max-width: 760px;
+  }
 }
 
 .svg-sprite {
