@@ -1,0 +1,78 @@
+.portfolio {
+  
+  @media screen and (min-width: 992px) {
+    padding: 0 50px;
+    margin: 0 -50px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 32px;
+
+    @media screen and (min-width: 786px) {
+      font-size: 50px;
+    }
+  }
+
+  &__description {
+    margin: 0;
+    max-width: 80%;
+    font-weight: 500;
+  }
+
+  &__slider {
+    position: relative;
+  }
+}
+
+.portfolio-slider {
+  position: relative;
+
+  @media screen and (min-width: 1120px) {
+    margin-bottom: 30px;
+  }
+}
+
+.portfolio-slider-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0 30px;
+
+  @media screen and (min-width: 1120px) {
+    margin: 0;
+  }
+
+  &__button {
+    width: 44px;
+    height: 44px;
+    border: none;
+    background-color: #000;
+    border-radius: 50%;
+    padding: 13px;
+    transition: opacity .3s ease;
+
+    &.disabled {
+      opacity: 0.3;
+
+      @media screen and (min-width: 786px) {
+        opacity: 0;
+      }
+    }
+
+    @media screen and (min-width: 1120px) {
+      position: absolute;
+      top: calc(50% - 22px);
+    }
+
+    &--prev {
+      left: -55px;
+    }
+
+    &--next {
+      right: -55px;
+    }
+  }
+}

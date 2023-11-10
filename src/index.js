@@ -1,4 +1,5 @@
 import Swiper from 'swiper';
+import { Navigation } from 'swiper/modules'
 import './style.less'
 import 'swiper/css/bundle';
 
@@ -14,8 +15,26 @@ $('.search__wrapper-mobile-open-js').click(function(){
   $(this).prev('.search__wrapper').addClass('active')
 });
 
-const swiper = new Swiper('.swiper-js',{
-  slidesPerView: 4.5,
-  spaceBetween: 20,
-  loop: true
+const swiper = new Swiper('#portfolio-slider-js', {
+  modules: [Navigation],
+  slidesPerView: 2,
+  spaceBetween: 10,
+  // loop: true,
+  breakpoints: {
+    560: {
+      slidesPerView: 3
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 20
+    },
+    1200: {
+      slidesPerView: 4.5,
+    }
+  },
+  navigation: {
+    nextEl: ".portfolio-slider-next-js",
+    prevEl: '.portfolio-slider-prev-js',
+    disabledClass: 'disabled'
+  }
 });

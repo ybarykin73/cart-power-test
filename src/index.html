@@ -79,7 +79,13 @@
             <symbol id="close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
                 <title></title>
                 <path d="M114,100l49-49a9.9,9.9,0,0,0-14-14L100,86,51,37A9.9,9.9,0,0,0,37,51l49,49L37,149a9.9,9.9,0,0,0,14,14l49-49,49,49a9.9,9.9,0,0,0,14-14Z"></path>
-              </symbol>
+            </symbol>
+            <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 12" id="arrow-right">
+                <path d="M9.84698 5.24517L5.7982 1.1964L6.86549 0.129101L12.7364 5.99998L6.86549 11.8709L5.7982 10.8036L9.84698 6.75478H0.659485V5.24517H9.84698Z" fill="white"></path>
+            </symbol>
+            <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 12" id="arrow-left">
+                <path d="M3.15341 5.24517L7.20219 1.1964L6.13489 0.129101L0.264019 5.99998L6.13489 11.8709L7.20219 10.8036L3.15341 6.75478H12.3409V5.24517H3.15341Z" fill="white"></path>
+            </symbol>
         </svg>
     </div>
     <header class="header">
@@ -242,24 +248,53 @@
                     </div>
                 </div>
                 <div class="banner__image">
-                    <img width="1160px" height="300px" class="banner__img" src="./assets/images/banner.jpg" alt="Альба">
+                    <img width="1160px" height="300px" loading="lazy" class="banner__img" src="./assets/images/banner.jpg" alt="Альба">
                 </div>
             </div>
         </section>
-        <section>
-            <div class="swiper swiper-js">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">Slide 1</div>
-                  <div class="swiper-slide">Slide 2</div>
-                  <div class="swiper-slide">Slide 3</div>
-                  <div class="swiper-slide">Slide 1</div>
-                  <div class="swiper-slide">Slide 2</div>
-                  <div class="swiper-slide">Slide 3</div>
-                  <div class="swiper-slide">Slide 1</div>
-                  <div class="swiper-slide">Slide 2</div>
-                  <div class="swiper-slide">Slide 3</div>
+        <section class="container">
+            <div class="portfolio">
+                <h2 class="portfolio__title">Фотографии и видео</h2>
+                <div class="portfolio__slider">
+                    <div id="portfolio-slider-js" class="swiper portfolio-slider">
+                        <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img width="260xp" height="170" loading="lazy" src="./assets/images/photo.jpg" alt="photo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img width="260xp" height="170" loading="lazy" src="./assets/images/photo.jpg" alt="photo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img width="260xp" height="170" loading="lazy" src="./assets/images/photo.jpg" alt="photo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img width="260xp" height="170" loading="lazy" src="./assets/images/photo.jpg" alt="photo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img width="260xp" height="170" loading="lazy" src="./assets/images/photo.jpg" alt="photo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img width="260xp" height="170" loading="lazy" src="./assets/images/photo.jpg" alt="photo">
+                        </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-slider-navigation">
+                        <button class="portfolio-slider-navigation__button portfolio-slider-navigation__button--prev portfolio-slider-prev-js">
+                            <svg width="18px" height="18px" class="icon">
+                                <use xlink:href="#arrow-left"></use>
+                            </svg>
+                        </button>
+                        <button class="portfolio-slider-navigation__button portfolio-slider-navigation__button--next portfolio-slider-next-js">
+                            <svg width="18px" height="18px" class="icon">
+                                <use xlink:href="#arrow-right"></use>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
-              </div>
+                <p class="portfolio__description">
+                    Представляем вашему вниманию спальный гарнитур «Натали» Он выполнен в классическом стиле с элементами аристократии и роскоши. В комплект входят: кровать, прикроватные тумбы, несколько вариантов шкафов и комод с зеркалом. Обратите внимание, все модули комплекта вы можете приобрести по отдельности. Коллекция «Натали» может быть выполнена в двух цветах: в темном оттенке «Орех», а также в более светлом решении «Клен Ясень Бежевый» Рекомендуем Вам обязательно посмотреть видео спальни, гостиной и прихожей из коллекции «Натали». 
+                </p>
+            </div>
         </section>
     </main>
     <footer>Footer</footer>
