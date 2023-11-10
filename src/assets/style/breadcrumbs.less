@@ -1,0 +1,36 @@
+.breadcrumbs {
+  &__list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__list-item {
+    margin-inline-end: 10px;
+    margin-bottom: 5px;
+    position: relative;
+    text-transform: capitalize;
+
+    &::after {
+      content: ' /';
+      margin-inline-start: 5px;
+    }
+
+    &:last-child {
+      font-weight: 600;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  &__list-link {
+    color: @primary-text-color;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

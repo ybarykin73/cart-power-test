@@ -1,0 +1,36 @@
+.banner {
+  position: relative;
+  margin: 0 -10px;
+
+  @media screen and (min-width: 786px) {
+    margin: 0;
+  }
+
+  &__main {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 20px 15px;
+
+    @media screen and (min-width: 786px) {
+      padding: 40px 50px;
+    }
+  }
+
+  &__body {
+    padding-top: 20px;
+  }
+
+  &__title {
+    font-size: 50px;
+    font-weight: 500px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  &__description {
+    margin: 0;
+  }
+}

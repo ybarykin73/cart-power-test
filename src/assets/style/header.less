@@ -1,5 +1,7 @@
 .header {
   background-color: #eee;
+  position: relative;
+  z-index: 15;
 
   &__top {
     display: flex;
@@ -7,6 +9,8 @@
     align-items: center;
     padding: 15px 0;
     border-bottom: 2px solid #000;
+    position: relative;
+    z-index: 5;
 
     @media screen and (max-width: 992px) {
       flex-wrap: wrap;
