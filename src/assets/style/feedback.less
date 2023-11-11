@@ -1,0 +1,65 @@
+.feedback {
+  &__title {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 15px;
+
+    @media screen and (min-width: 560px) {
+      font-size: 40px;
+    }
+  }
+
+  &__help-text {
+    color: #00D6FF;
+  }
+
+  &__form {
+    display: grid;
+    grid-row-gap: 20px;
+
+    @media screen and (min-width: 560px) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 20px;
+    }
+
+    @media screen and (min-width: 992px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  &__form-item {
+    position: relative;
+  }
+
+  &__form-input {
+    border: none;
+    min-height: 55px;
+    width: 100%;
+    background-color: transparent;
+    border-bottom: 1px solid #999;
+    padding-inline-start: 40px;
+    color: #fff;
+    outline: none;
+  }
+
+  &__form-image {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    fill: #00D6FF;
+  }
+
+  &__form-buttton {
+    text-transform: uppercase;
+    border-radius: 4px;
+    background-color: #fff;
+    border: none;
+    padding: 20px 0;
+
+    @media (max-width: 992px) and (min-width: 560px) {
+      grid-column: 1/4;
+    }
+  }
+}
