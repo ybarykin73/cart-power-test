@@ -28,8 +28,8 @@ module.exports = {
                 use: ['style-loader', 'css-loader', 'less-loader']
             },
             {
-                test: /\.(png|svg|jpg|jpeg|gif)$/i,
-                type: 'asset/resource',
+                test: /\.(html)$/,
+                use: ['html-loader'],
             },
             {
                 test: /\.(woff|woff2|eot|ttf|otf)$/i,
