@@ -86,6 +86,29 @@
             <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 12" id="arrow-left">
                 <path d="M3.15341 5.24517L7.20219 1.1964L6.13489 0.129101L0.264019 5.99998L6.13489 11.8709L7.20219 10.8036L3.15341 6.75478H12.3409V5.24517H3.15341Z" fill="white"></path>
             </symbol>
+            <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15" id="star-fill">
+                <g clip-path="url(#clip0_1_980)">
+                  <path d="M7.50001 11.4125L3.09188 13.88L4.07626 8.925L0.366882 5.495L5.38376 4.9L7.50001 0.3125L9.61626 4.9L14.6331 5.495L10.9238 8.925L11.9081 13.88L7.50001 11.4125Z" fill="black"></path>
+                </g>
+                <defs>
+                  <clipPath id="clip0_1_980">
+                    <rect width="15" height="15" fill="white"></rect>
+                  </clipPath>
+                </defs>
+            </symbol>
+            <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15" id="star-half-line">
+                <g clip-path="url(#clip0_1_992)">
+                  <path d="M7.50001 9.98L10.1544 11.4656L9.56126 8.4825L11.7944 6.41687L8.77376 6.05875L7.50001 3.29688V9.98ZM7.50001 11.4125L3.09188 13.88L4.07626 8.925L0.366882 5.495L5.38376 4.9L7.50001 0.3125L9.61626 4.9L14.6331 5.495L10.9238 8.925L11.9081 13.88L7.50001 11.4125Z" fill="black"></path>
+                </g>
+                <defs>
+                  <clipPath id="clip0_1_992">
+                    <rect width="15" height="15" fill="white"></rect>
+                  </clipPath>
+                </defs>
+            </symbol>
+            <symbol fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="star-empty">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </symbol>
         </svg>
     </div>
     <header class="header">
@@ -223,8 +246,8 @@
         </div>
     </header>
     <main class="main">
-        <section class="container">
-            <div class="banner">
+        <div class="container">
+            <section class="banner">
                 <div class="banner__main">
                     <div class="breadcrumbs">
                         <ul class="breadcrumbs__list">
@@ -250,32 +273,30 @@
                 <div class="banner__image">
                     <img width="1160px" height="300px" loading="lazy" class="banner__img" src="./assets/images/banner.jpg" alt="Альба">
                 </div>
-            </div>
-        </section>
-        <section class="container">
-            <div class="portfolio">
-                <h2 class="portfolio__title">Фотографии и видео</h2>
+            </section>
+            <section class="portfolio">
+                <h2 class="portfolio__title heading heading--major">Фотографии и видео</h2>
                 <div class="portfolio__slider">
                     <div id="portfolio-slider-js" class="swiper portfolio-slider">
                         <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img width="260xp" height="170" loading="lazy" src="./assets/images/photo.jpg" alt="photo">
-                        </div>
-                        <div class="swiper-slide">
-                            <img width="260xp" height="170" loading="lazy" src="./assets/images/photo.jpg" alt="photo">
-                        </div>
-                        <div class="swiper-slide">
-                            <img width="260xp" height="170" loading="lazy" src="./assets/images/photo.jpg" alt="photo">
-                        </div>
-                        <div class="swiper-slide">
-                            <img width="260xp" height="170" loading="lazy" src="./assets/images/photo.jpg" alt="photo">
-                        </div>
-                        <div class="swiper-slide">
-                            <img width="260xp" height="170" loading="lazy" src="./assets/images/photo.jpg" alt="photo">
-                        </div>
-                        <div class="swiper-slide">
-                            <img width="260xp" height="170" loading="lazy" src="./assets/images/photo.jpg" alt="photo">
-                        </div>
+                            <div class="swiper-slide">
+                                <img width="260xp" height="170" loading="lazy" src="./assets/images/photo.jpg" alt="photo">
+                            </div>
+                            <div class="swiper-slide">
+                                <img width="260xp" height="170" loading="lazy" src="./assets/images/photo.jpg" alt="photo">
+                            </div>
+                            <div class="swiper-slide">
+                                <img width="260xp" height="170" loading="lazy" src="./assets/images/photo.jpg" alt="photo">
+                            </div>
+                            <div class="swiper-slide">
+                                <img width="260xp" height="170" loading="lazy" src="./assets/images/photo.jpg" alt="photo">
+                            </div>
+                            <div class="swiper-slide">
+                                <img width="260xp" height="170" loading="lazy" src="./assets/images/photo.jpg" alt="photo">
+                            </div>
+                            <div class="swiper-slide">
+                                <img width="260xp" height="170" loading="lazy" src="./assets/images/photo.jpg" alt="photo">
+                            </div>
                         </div>
                     </div>
                     <div class="portfolio-slider-navigation">
@@ -294,8 +315,217 @@
                 <p class="portfolio__description">
                     Представляем вашему вниманию спальный гарнитур «Натали» Он выполнен в классическом стиле с элементами аристократии и роскоши. В комплект входят: кровать, прикроватные тумбы, несколько вариантов шкафов и комод с зеркалом. Обратите внимание, все модули комплекта вы можете приобрести по отдельности. Коллекция «Натали» может быть выполнена в двух цветах: в темном оттенке «Орех», а также в более светлом решении «Клен Ясень Бежевый» Рекомендуем Вам обязательно посмотреть видео спальни, гостиной и прихожей из коллекции «Натали». 
                 </p>
-            </div>
-        </section>
+            </section>
+        </div>
+        <div class="container">
+            <section class="products">
+                <h2 class="products__title heading heading--major">
+                    Для спальни
+                </h2>
+                <div class="products-slider">
+                    <div id="products-slider-js" class="swiper products-slider__wrapper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="products__card">
+                                    <div class="products__card-header">
+                                        <a class="products__card-image" href="#">
+                                            <img width="216px" height="216px" loading="lazy" class="products__card-img" src="./assets/images/cart-image.jpg" alt="product name">
+                                        </a>
+                                        <div class="products__card-discount">
+                                            -10%
+                                        </div>
+                                    </div>
+                                    <div class="products__card-body">
+                                        <div class="rating">
+                                            <div class="rating__item">
+                                                <svg width="15px" height="15px" class="icon"><use xlink:href="#star-fill"></use></svg>
+                                            </div>
+                                            <div class="rating__item">
+                                                <svg width="15px" height="15px" class="icon"><use xlink:href="#star-fill"></use></svg>
+                                            </div>
+                                            <div class="rating__item">
+                                                <svg width="15px" height="15px" class="icon"><use xlink:href="#star-fill"></use></svg>
+                                            </div>
+                                            <div class="rating__item">
+                                                <svg width="15px" height="15px" class="icon"><use xlink:href="#star-half-line"></use></svg>
+                                            </div>
+                                            <div class="rating__item">
+                                                <svg width="15px" height="15px" class="icon"><use xlink:href="#star-empty"></use></svg>
+                                            </div>
+                                        </div>
+                                        <h3 class="products__card-name">Кровать «Триумф»</h3>
+                                        <div class="products__card-price">
+                                            <div class="price price--old">18 000 ₽</div>
+                                            <div class="price">8 000 ₽</div>
+                                        </div>
+                                    </div>
+                                    <div class="products__card-footer">
+                                        <button class="products__card-button add-to-cart-button" aria-label="Add to cart">В корзину <span>+</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="products__card">
+                                    <div class="products__card-header">
+                                        <a class="products__card-image" href="#">
+                                            <img width="216px" height="216px" loading="lazy" class="products__card-img" src="./assets/images/cart-image.jpg" alt="product name">
+                                        </a>
+                                    </div>
+                                    <div class="products__card-body">
+                                        <div class="rating">
+                                            <div class="rating__item">
+                                                <svg width="15px" height="15px" class="icon"><use xlink:href="#star-fill"></use></svg>
+                                            </div>
+                                            <div class="rating__item">
+                                                <svg width="15px" height="15px" class="icon"><use xlink:href="#star-fill"></use></svg>
+                                            </div>
+                                            <div class="rating__item">
+                                                <svg width="15px" height="15px" class="icon"><use xlink:href="#star-half-line"></use></svg>
+                                            </div>
+                                            <div class="rating__item">
+                                                <svg width="15px" height="15px" class="icon"><use xlink:href="#star-empty"></use></svg>
+                                            </div>
+                                            <div class="rating__item">
+                                                <svg width="15px" height="15px" class="icon"><use xlink:href="#star-empty"></use></svg>
+                                            </div>
+                                        </div>
+                                        <h3 class="products__card-name">Кровать «Триумф»</h3>
+                                        <div class="products__card-price">
+                                            <div class="price">8 000 ₽</div>
+                                        </div>
+                                    </div>
+                                    <div class="products__card-footer">
+                                        <button class="products__card-button add-to-cart-button" aria-label="Add to cart">В корзину <span>+</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="products__card">
+                                    <div class="products__card-header">
+                                        <a class="products__card-image" href="#">
+                                            <img width="216px" height="216px" loading="lazy" class="products__card-img" src="./assets/images/cart-image.jpg" alt="product name">
+                                        </a>
+                                    </div>
+                                    <div class="products__card-body">
+                                        <div class="rating">
+                                            <div class="rating__item">
+                                                <svg width="15px" height="15px" class="icon"><use xlink:href="#star-empty"></use></svg>
+                                            </div>
+                                            <div class="rating__item">
+                                                <svg width="15px" height="15px" class="icon"><use xlink:href="#star-empty"></use></svg>
+                                            </div>
+                                            <div class="rating__item">
+                                                <svg width="15px" height="15px" class="icon"><use xlink:href="#star-empty"></use></svg>
+                                            </div>
+                                            <div class="rating__item">
+                                                <svg width="15px" height="15px" class="icon"><use xlink:href="#star-empty"></use></svg>
+                                            </div>
+                                            <div class="rating__item">
+                                                <svg width="15px" height="15px" class="icon"><use xlink:href="#star-empty"></use></svg>
+                                            </div>
+                                        </div>
+                                        <h3 class="products__card-name">Кровать «Триумф»</h3>
+                                        <div class="products__card-price">
+                                            <div class="price">8 000 ₽</div>
+                                        </div>
+                                    </div>
+                                    <div class="products__card-footer">
+                                        <button class="products__card-button add-to-cart-button" aria-label="Add to cart">В корзину <span>+</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="products__card">
+                                    <div class="products__card-header">
+                                        <a class="products__card-image" href="#">
+                                            <img width="216px" height="216px" loading="lazy" class="products__card-img" src="./assets/images/cart-image.jpg" alt="product name">
+                                        </a>
+                                        <div class="products__card-discount">
+                                            -10%
+                                        </div>
+                                    </div>
+                                    <div class="products__card-body">
+                                        <div class="rating">
+                                            <div class="rating__item">
+                                                <svg width="15px" height="15px" class="icon"><use xlink:href="#star-fill"></use></svg>
+                                            </div>
+                                            <div class="rating__item">
+                                                <svg width="15px" height="15px" class="icon"><use xlink:href="#star-fill"></use></svg>
+                                            </div>
+                                            <div class="rating__item">
+                                                <svg width="15px" height="15px" class="icon"><use xlink:href="#star-fill"></use></svg>
+                                            </div>
+                                            <div class="rating__item">
+                                                <svg width="15px" height="15px" class="icon"><use xlink:href="#star-half-line"></use></svg>
+                                            </div>
+                                            <div class="rating__item">
+                                                <svg width="15px" height="15px" class="icon"><use xlink:href="#star-empty"></use></svg>
+                                            </div>
+                                        </div>
+                                        <h3 class="products__card-name">Кровать «Триумф»</h3>
+                                        <div class="products__card-price">
+                                            <div class="price price--old">18 000 ₽</div>
+                                            <div class="price">8 000 ₽</div>
+                                        </div>
+                                    </div>
+                                    <div class="products__card-footer">
+                                        <button class="products__card-button add-to-cart-button" aria-label="Add to cart">В корзину <span>+</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="products__card">
+                                    <div class="products__card-header">
+                                        <a class="products__card-image" href="#">
+                                            <img width="216px" height="216px" loading="lazy" class="products__card-img" src="./assets/images/cart-image.jpg" alt="product name">
+                                        </a>
+                                    </div>
+                                    <div class="products__card-body">
+                                        <div class="rating">
+                                            <div class="rating__item">
+                                                <svg width="15px" height="15px" class="icon"><use xlink:href="#star-fill"></use></svg>
+                                            </div>
+                                            <div class="rating__item">
+                                                <svg width="15px" height="15px" class="icon"><use xlink:href="#star-fill"></use></svg>
+                                            </div>
+                                            <div class="rating__item">
+                                                <svg width="15px" height="15px" class="icon"><use xlink:href="#star-fill"></use></svg>
+                                            </div>
+                                            <div class="rating__item">
+                                                <svg width="15px" height="15px" class="icon"><use xlink:href="#star-fill"></use></svg>
+                                            </div>
+                                            <div class="rating__item">
+                                                <svg width="15px" height="15px" class="icon"><use xlink:href="#star-fill"></use></svg>
+                                            </div>
+                                        </div>
+                                        <h3 class="products__card-name">Кровать «Триумф»</h3>
+                                        <div class="products__card-price">
+                                            <div class="price price--old">18 000 ₽</div>
+                                            <div class="price">8 000 ₽</div>
+                                        </div>
+                                    </div>
+                                    <div class="products__card-footer">
+                                        <button class="products__card-button add-to-cart-button" aria-label="Add to cart">В корзину <span>+</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products-slider__navigation">
+                        <button class="products-slider__button products-slider__button--prev products-slider__button-prev-js">
+                            <svg width="18px" height="18px" class="icon">
+                                <use xlink:href="#arrow-left"></use>
+                            </svg>
+                        </button>
+                        <button class="products-slider__button products-slider__button--next products-slider__button-next-js">
+                            <svg width="18px" height="18px" class="icon">
+                                <use xlink:href="#arrow-right"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
     <footer>Footer</footer>
 </body>

@@ -60,6 +60,10 @@ ul, ol {
   padding: 0 10px;
   margin: 0 auto;
 
+  @media screen and (max-width: 1400px) {
+    max-width: 1060px;
+  }
+
   @media screen and (max-width: 1200px) {
     max-width: 960px;
   }
@@ -69,17 +73,30 @@ ul, ol {
   }
 }
 
+.heading {
+  margin: 0;
+  font-size: 32px;
+
+  &--major {
+    @media screen and (min-width: 786px) {
+      font-size: 50px;
+    }
+  }
+}
+
 .svg-sprite {
   display: none
 }
 
-@import '/src/assets//style/header.less';
-@import '/src/assets//style/location.less';
-@import '/src/assets//style/menu.less';
-@import '/src/assets//style/contact.less';
-@import '/src/assets//style/logo.less';
-@import '/src/assets//style/search.less';
-@import '/src/assets//style/user.less';
-@import '/src/assets//style/banner.less';
-@import '/src/assets//style/breadcrumbs.less';
-@import '/src/assets//style/portfolio.less';
+@import '/src/assets/style/header.less';
+@import '/src/assets/style/location.less';
+@import '/src/assets/style/menu.less';
+@import '/src/assets/style/contact.less';
+@import '/src/assets/style/logo.less';
+@import '/src/assets/style/search.less';
+@import '/src/assets/style/user.less';
+@import '/src/assets/style/banner.less';
+@import '/src/assets/style/breadcrumbs.less';
+@import '/src/assets/style/portfolio.less';
+@import '/src/assets/style/products.less';
+@import '/src/assets/style/rating.less';
