@@ -1,0 +1,133 @@
+.compilation {
+  background-color: #eee;
+  padding: 30px 0;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 992px) {
+    padding: 80px 0;
+    margin-bottom: 60px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 992px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__block {
+    @media screen and (min-width: 786px) {
+      display: flex;
+      justify-content: flex-start;
+      align-items: stretch;
+    }
+  }
+
+  &__body {
+    padding-inline-end: 30px;
+    margin-bottom: 30px;
+    flex-shrink: 0;
+
+    @media screen and (min-width: 786px) {
+      margin-inline-end: 20px;
+      max-width: 410px;
+      width: 100%;
+    }
+  }
+
+  &__slider {
+    position: relative;
+
+    @media screen and (min-width: 786px) {
+      max-width: calc(100% - 430px);
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding: 0 35px;
+    }
+  }
+
+  &__slider-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  &__slider-button {
+
+    @media screen and (min-width: 992px) {
+      position: relative;
+      width: 32px;
+      height: 32px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      position: absolute;
+      top: calc(50% - 16px);
+    }
+
+    &--prev {
+      left: -5px;
+    }
+    &--next {
+      right: -5px;
+    }
+  }
+
+  &__list {
+    border-bottom: 1px solid #000;
+    margin-bottom: 20px;
+  }
+
+  &__list-item {
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 16px;
+    color: #b0b0b0;
+  }
+
+  &__item-price {
+    font-weight: 600;
+  }
+
+  &__input {
+    display: none;
+
+    &:checked + .compilation__checked {
+      background-image: url('../images/checked.svg');
+    }
+
+    &:checked ~ div {
+      color: #000;
+    }
+  }
+
+  &__checked {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 0;
+    right: -25px;
+    background-image: url('../images/no-checked.svg');
+    background-size: cover;
+  }
+
+  &__total {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 20px;
+  }
+
+  &__total-price {
+    font-weight: 600;
+  }
+}

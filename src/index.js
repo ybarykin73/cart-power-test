@@ -61,3 +61,30 @@ const swiperProducts = new Swiper('#products-slider-js', {
     prevEl: '.products-slider__button-prev-js',
   }
 });
+
+const compilationSlider = new Swiper('#compilation-slider-js', {
+  modules: [Navigation],
+  slidesPerView: 1,
+  spaceBetween: 10,
+  loop: true,
+  breakpoints: {
+    560: {
+      slidesPerView: 2,
+    },
+    786: {
+      slidesPerView: 1,
+    },
+    1200: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    1400: {
+      slidesPerView: 3,
+      spaceBetween: 20
+    }
+  },
+  navigation: {
+    nextEl: '.compilation__slider-button-next-js',
+    prevEl: '.compilation__slider-button-prev-js',
+  }
+});

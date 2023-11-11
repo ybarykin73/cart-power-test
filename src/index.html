@@ -300,12 +300,12 @@
                         </div>
                     </div>
                     <div class="portfolio-slider-navigation">
-                        <button class="portfolio-slider-navigation__button portfolio-slider-navigation__button--prev portfolio-slider-prev-js">
+                        <button class="slider__button portfolio-slider-navigation__button portfolio-slider-navigation__button--prev portfolio-slider-prev-js">
                             <svg width="18px" height="18px" class="icon">
                                 <use xlink:href="#arrow-left"></use>
                             </svg>
                         </button>
-                        <button class="portfolio-slider-navigation__button portfolio-slider-navigation__button--next portfolio-slider-next-js">
+                        <button class="slider__button portfolio-slider-navigation__button portfolio-slider-navigation__button--next portfolio-slider-next-js">
                             <svg width="18px" height="18px" class="icon">
                                 <use xlink:href="#arrow-right"></use>
                             </svg>
@@ -317,6 +317,256 @@
                 </p>
             </section>
         </div>
+        <section class="compilation">
+            <div class="container">
+                <div class="compilation__wrapper">
+                    <h2 class="compilation__title heading heading--major">Подборка один</h2>
+                    <div class="compilation__block">
+                        <div class="compilation__body">
+                            <ul class="compilation__list">
+                                <li class="compilation__list-item">
+                                    <label class="compilation__label">
+                                        <input class="compilation__input" type="checkbox">
+                                        <span class="compilation__checked"></span>
+                                        <div class="compilation__item">
+                                            <div class="compilation__item-text">Кровать «Триумф» 160</div>
+                                            <div class="compilation__item-price">8 000 ₽</div>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li class="compilation__list-item">
+                                    <label class="compilation__label">
+                                        <input class="compilation__input" type="checkbox">
+                                        <span class="compilation__checked"></span>
+                                        <div class="compilation__item">
+                                            <div class="compilation__item-text">Матрас средний</div>
+                                            <div class="compilation__item-price">10 000 ₽</div>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li class="compilation__list-item">
+                                    <label class="compilation__label">
+                                        <input class="compilation__input" type="checkbox" checked>
+                                        <span class="compilation__checked"></span>
+                                        <div class="compilation__item">
+                                            <div class="compilation__item-text">Тумба прикроватная</div>
+                                            <div class="compilation__item-price">2 000 ₽</div>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li class="compilation__list-item">
+                                    <label class="compilation__label">
+                                        <input class="compilation__input" type="checkbox" checked>
+                                        <span class="compilation__checked"></span>
+                                        <div class="compilation__item">
+                                            <div class="compilation__item-text">Шкаф 4-дверный</div>
+                                            <div class="compilation__item-price">10 000 ₽</div>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li class="compilation__list-item">
+                                    <label class="compilation__label">
+                                        <input class="compilation__input" type="checkbox">
+                                        <span class="compilation__checked"></span>
+                                        <div class="compilation__item">
+                                            <div class="compilation__item-text">Комод</div>
+                                            <div class="compilation__item-price">2 000 ₽</div>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li class="compilation__list-item">
+                                    <label class="compilation__label">
+                                        <input class="compilation__input" type="checkbox">
+                                        <span class="compilation__checked"></span>
+                                        <div class="compilation__item">
+                                            <div class="compilation__item-text">Зеркало</div>
+                                            <div class="compilation__item-price">2 000 ₽</div>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li class="compilation__list-item">
+                                    <label class="compilation__label">
+                                        <input class="compilation__input" type="checkbox">
+                                        <span class="compilation__checked"></span>
+                                        <div class="compilation__item">
+                                            <div class="compilation__item-text">Пуф</div>
+                                            <div class="compilation__item-price">2 000 ₽</div>
+                                        </div>
+                                    </label>
+                                </li>
+                            </ul>
+                            <div class="compilation__total">
+                                <div class="compilation__total-text">Итого</div>
+                                <div class="compilation__total-price">2 000 ₽</div>
+                            </div>
+                            <button class="compilation__button add-to-cart-button" aria-label="Add to cart">Добавить товары в корзину <span>+</span></button>
+                        </div>
+                        <div class="compilation__slider">
+                            <div id="compilation-slider-js" class="swiper compilation-slider__wrapper">
+                                <div class="slider__wrapper swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="products__card">
+                                            <div class="products__card-header">
+                                                <a class="products__card-image" href="#">
+                                                    <img width="216px" height="216px" loading="lazy" class="products__card-img" src="./assets/images/cart-image.jpg" alt="product name">
+                                                </a>
+                                                <div class="products__card-discount">
+                                                    -10%
+                                                </div>
+                                            </div>
+                                            <div class="products__card-body">
+                                                <div class="rating">
+                                                    <div class="rating__item">
+                                                        <svg width="15px" height="15px" class="icon"><use xlink:href="#star-fill"></use></svg>
+                                                    </div>
+                                                    <div class="rating__item">
+                                                        <svg width="15px" height="15px" class="icon"><use xlink:href="#star-fill"></use></svg>
+                                                    </div>
+                                                    <div class="rating__item">
+                                                        <svg width="15px" height="15px" class="icon"><use xlink:href="#star-fill"></use></svg>
+                                                    </div>
+                                                    <div class="rating__item">
+                                                        <svg width="15px" height="15px" class="icon"><use xlink:href="#star-half-line"></use></svg>
+                                                    </div>
+                                                    <div class="rating__item">
+                                                        <svg width="15px" height="15px" class="icon"><use xlink:href="#star-empty"></use></svg>
+                                                    </div>
+                                                </div>
+                                                <h3 class="products__card-name">Кровать «Триумф»</h3>
+                                                <div class="products__card-price">
+                                                    <div class="price price--old">18 000 ₽</div>
+                                                    <div class="price">8 000 ₽</div>
+                                                </div>
+                                            </div>
+                                            <div class="products__card-footer">
+                                                <button class="products__card-button add-to-cart-button" aria-label="Add to cart">В корзину <span>+</span></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="products__card">
+                                            <div class="products__card-header">
+                                                <a class="products__card-image" href="#">
+                                                    <img width="216px" height="216px" loading="lazy" class="products__card-img" src="./assets/images/cart-image.jpg" alt="product name">
+                                                </a>
+                                            </div>
+                                            <div class="products__card-body">
+                                                <div class="rating">
+                                                    <div class="rating__item">
+                                                        <svg width="15px" height="15px" class="icon"><use xlink:href="#star-fill"></use></svg>
+                                                    </div>
+                                                    <div class="rating__item">
+                                                        <svg width="15px" height="15px" class="icon"><use xlink:href="#star-fill"></use></svg>
+                                                    </div>
+                                                    <div class="rating__item">
+                                                        <svg width="15px" height="15px" class="icon"><use xlink:href="#star-half-line"></use></svg>
+                                                    </div>
+                                                    <div class="rating__item">
+                                                        <svg width="15px" height="15px" class="icon"><use xlink:href="#star-empty"></use></svg>
+                                                    </div>
+                                                    <div class="rating__item">
+                                                        <svg width="15px" height="15px" class="icon"><use xlink:href="#star-empty"></use></svg>
+                                                    </div>
+                                                </div>
+                                                <h3 class="products__card-name">Кровать «Триумф»</h3>
+                                                <div class="products__card-price">
+                                                    <div class="price">8 000 ₽</div>
+                                                </div>
+                                            </div>
+                                            <div class="products__card-footer">
+                                                <button class="products__card-button add-to-cart-button" aria-label="Add to cart">В корзину <span>+</span></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="products__card">
+                                            <div class="products__card-header">
+                                                <a class="products__card-image" href="#">
+                                                    <img width="216px" height="216px" loading="lazy" class="products__card-img" src="./assets/images/cart-image.jpg" alt="product name">
+                                                </a>
+                                            </div>
+                                            <div class="products__card-body">
+                                                <div class="rating">
+                                                    <div class="rating__item">
+                                                        <svg width="15px" height="15px" class="icon"><use xlink:href="#star-empty"></use></svg>
+                                                    </div>
+                                                    <div class="rating__item">
+                                                        <svg width="15px" height="15px" class="icon"><use xlink:href="#star-empty"></use></svg>
+                                                    </div>
+                                                    <div class="rating__item">
+                                                        <svg width="15px" height="15px" class="icon"><use xlink:href="#star-empty"></use></svg>
+                                                    </div>
+                                                    <div class="rating__item">
+                                                        <svg width="15px" height="15px" class="icon"><use xlink:href="#star-empty"></use></svg>
+                                                    </div>
+                                                    <div class="rating__item">
+                                                        <svg width="15px" height="15px" class="icon"><use xlink:href="#star-empty"></use></svg>
+                                                    </div>
+                                                </div>
+                                                <h3 class="products__card-name">Кровать «Триумф»</h3>
+                                                <div class="products__card-price">
+                                                    <div class="price">8 000 ₽</div>
+                                                </div>
+                                            </div>
+                                            <div class="products__card-footer">
+                                                <button class="products__card-button add-to-cart-button" aria-label="Add to cart">В корзину <span>+</span></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="products__card">
+                                            <div class="products__card-header">
+                                                <a class="products__card-image" href="#">
+                                                    <img width="216px" height="216px" loading="lazy" class="products__card-img" src="./assets/images/cart-image.jpg" alt="product name">
+                                                </a>
+                                            </div>
+                                            <div class="products__card-body">
+                                                <div class="rating">
+                                                    <div class="rating__item">
+                                                        <svg width="15px" height="15px" class="icon"><use xlink:href="#star-empty"></use></svg>
+                                                    </div>
+                                                    <div class="rating__item">
+                                                        <svg width="15px" height="15px" class="icon"><use xlink:href="#star-empty"></use></svg>
+                                                    </div>
+                                                    <div class="rating__item">
+                                                        <svg width="15px" height="15px" class="icon"><use xlink:href="#star-empty"></use></svg>
+                                                    </div>
+                                                    <div class="rating__item">
+                                                        <svg width="15px" height="15px" class="icon"><use xlink:href="#star-empty"></use></svg>
+                                                    </div>
+                                                    <div class="rating__item">
+                                                        <svg width="15px" height="15px" class="icon"><use xlink:href="#star-empty"></use></svg>
+                                                    </div>
+                                                </div>
+                                                <h3 class="products__card-name">Кровать «Триумф»</h3>
+                                                <div class="products__card-price">
+                                                    <div class="price">8 000 ₽</div>
+                                                </div>
+                                            </div>
+                                            <div class="products__card-footer">
+                                                <button class="products__card-button add-to-cart-button" aria-label="Add to cart">В корзину <span>+</span></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="compilation__slider-navigation">
+                                <button class="slider__button compilation__slider-button compilation__slider-button--prev compilation__slider-button-prev-js">
+                                    <svg width="18px" height="18px" class="icon">
+                                        <use xlink:href="#arrow-left"></use>
+                                    </svg>
+                                </button>
+                                <button class="slider__button compilation__slider-button compilation__slider-button--next compilation__slider-button-next-js">
+                                    <svg width="18px" height="18px" class="icon">
+                                        <use xlink:href="#arrow-right"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <div class="container">
             <section class="products">
                 <h2 class="products__title heading heading--major">
@@ -324,7 +574,7 @@
                 </h2>
                 <div class="products-slider">
                     <div id="products-slider-js" class="swiper products-slider__wrapper">
-                        <div class="swiper-wrapper">
+                        <div class="slider__wrapper swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="products__card">
                                     <div class="products__card-header">
@@ -512,12 +762,12 @@
                         </div>
                     </div>
                     <div class="products-slider__navigation">
-                        <button class="products-slider__button products-slider__button--prev products-slider__button-prev-js">
+                        <button class="slider__button products-slider__button products-slider__button--prev products-slider__button-prev-js">
                             <svg width="18px" height="18px" class="icon">
                                 <use xlink:href="#arrow-left"></use>
                             </svg>
                         </button>
-                        <button class="products-slider__button products-slider__button--next products-slider__button-next-js">
+                        <button class="slider__button products-slider__button products-slider__button--next products-slider__button-next-js">
                             <svg width="18px" height="18px" class="icon">
                                 <use xlink:href="#arrow-right"></use>
                             </svg>

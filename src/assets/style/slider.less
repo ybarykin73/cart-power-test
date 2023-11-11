@@ -1,0 +1,33 @@
+@button-width: 44px;
+
+.slider {
+  &__wrapper {
+    align-items: stretch;
+
+    .swiper-slide {
+      height: unset;
+    }
+  }
+
+  &__button {
+    background-color: #000;
+    width: @button-width;
+    height: @button-width;
+    border: none;
+    border-radius: 50%;
+    transition: opacity .3s ease;
+
+    &.disabled {
+      opacity: 0.3;
+
+      @media screen and (min-width: 786px) {
+        opacity: 0;
+      }
+    }
+
+    @media screen and (min-width: 992px) {
+      position: absolute;
+      top: calc(50% - calc(@button-width / 2));
+    }
+  }
+}
