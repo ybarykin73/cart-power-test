@@ -10,12 +10,16 @@
   }
 
   &__button {
-    background-color: #000;
+    background-color: @primary-color;
     width: @button-width;
     height: @button-width;
     border: none;
-    border-radius: 50%;
+    border-radius: @border-max-radius;
     transition: opacity .3s ease;
+
+    &:hover {
+      box-shadow: 0 0 5px 1px rgba(0, 0, 0, .7);
+    }
 
     &.disabled {
       opacity: 0.3;

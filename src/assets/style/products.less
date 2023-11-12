@@ -10,8 +10,8 @@
   }
 
   &__card {
-    background-color: #eee;
-    border-radius: 8px;
+    background-color: @background-secondary-color;
+    border-radius: @border-common-radius;
     height: 100%;
     padding-bottom: 15px;
     display: flex;
@@ -35,7 +35,7 @@
     position: absolute;
     top: 10px;
     left: 10px;
-    border-radius: 8px;
+    border-radius: @border-common-radius;
     background-color: #fff;
     padding: 5px 10px;
     font-weight: 500;
@@ -87,7 +87,7 @@
 }
 
 .add-to-cart-button {
-  border-radius: 4px;
+  border-radius: @border-tiny-radius;
   width: 100%;
   color: #fff;
   font-size: 16px;
@@ -127,11 +127,11 @@
 
   &__button {
     &--prev {
-      left: -55px;
+      left: -5px;
     }
 
     &--next {
-      right: -55px;
+      right: -5px;
     }
   }
 }

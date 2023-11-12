@@ -172,7 +172,7 @@
                 </div>
                 <div class="search">
                     <div class="search__menu">
-                        <button class="search__menu-button search__menu-button-js">
+                        <button class="search__menu-button search__menu-button-js" aria-label="Open manu">
                             <div class="search__menu-button-icon">
                                 <svg width="19px" height="19px" class="icon">
                                     <use xlink:href="#menu-icon"></use>
@@ -180,13 +180,15 @@
                             </div>
                             Каталог
                         </button>
-                        <ul class="search__menu-list">
-                            <li class="search__menu-list-item"><a class="search__menu-list-link" href="#">Lorem, ipsum.</a></li>
-                            <li class="search__menu-list-item"><a class="search__menu-list-link" href="#">Lorem, ipsum.</a></li>
-                            <li class="search__menu-list-item"><a class="search__menu-list-link" href="#">Lorem, ipsum.</a></li>
-                            <li class="search__menu-list-item"><a class="search__menu-list-link" href="#">Lorem, ipsum.</a></li>
-                            <li class="search__menu-list-item"><a class="search__menu-list-link" href="#">Lorem, ipsum.</a></li>
-                        </ul>
+                        <nav class="search__menu-wrapper">
+                            <ul class="search__menu-list">
+                                <li class="search__menu-list-item"><a class="search__menu-list-link" href="#">Lorem, ipsum.</a></li>
+                                <li class="search__menu-list-item"><a class="search__menu-list-link" href="#">Lorem, ipsum.</a></li>
+                                <li class="search__menu-list-item"><a class="search__menu-list-link" href="#">Lorem, ipsum.</a></li>
+                                <li class="search__menu-list-item"><a class="search__menu-list-link" href="#">Lorem, ipsum.</a></li>
+                                <li class="search__menu-list-item"><a class="search__menu-list-link" href="#">Lorem, ipsum.</a></li>
+                            </ul>
+                        </nav>
                     </div>
                     <div class="search__wrapper">
                         <form class="search__form" method="post">
@@ -197,13 +199,13 @@
                                 </svg>
                             </button>
                         </form>
-                        <button class="search__wrapper-close-button search__wrapper-close-button-js">
+                        <button class="search__wrapper-close-button search__wrapper-close-button-js" aria-label="Close search">
                             <svg width="20px" height="20px" class="icon">
                                 <use xlink:href="#close"></use>
                             </svg>
                         </button>
                     </div>
-                    <button class="search__wrapper-mobile-open search__wrapper-mobile-open-js">
+                    <button class="search__wrapper-mobile-open search__wrapper-mobile-open-js" aria-label="Search">
                         <svg width="20px" height="20px" class="icon">
                             <use xlink:href="#search"></use>
                         </svg>
@@ -317,12 +319,12 @@
                         </div>
                     </div>
                     <div class="portfolio-slider-navigation">
-                        <button class="slider__button portfolio-slider-navigation__button portfolio-slider-navigation__button--prev portfolio-slider-prev-js">
+                        <button class="slider__button portfolio-slider-navigation__button portfolio-slider-navigation__button--prev portfolio-slider-prev-js" aria-label="Prec slide">
                             <svg width="18px" height="18px" class="icon">
                                 <use xlink:href="#arrow-left"></use>
                             </svg>
                         </button>
-                        <button class="slider__button portfolio-slider-navigation__button portfolio-slider-navigation__button--next portfolio-slider-next-js">
+                        <button class="slider__button portfolio-slider-navigation__button portfolio-slider-navigation__button--next portfolio-slider-next-js" aria-label="Nex slide aria-label=""">
                             <svg width="18px" height="18px" class="icon">
                                 <use xlink:href="#arrow-right"></use>
                             </svg>
@@ -568,19 +570,19 @@
                                 </div>
                             </div>
                             <div class="compilation__slider-navigation">
-                                <button class="slider__button compilation__slider-button compilation__slider-button--prev compilation__slider-button-prev-js">
+                                <button class="slider__button compilation__slider-button compilation__slider-button--prev compilation__slider-button-prev-js" aria-label="Prev slide">
                                     <svg width="18px" height="18px" class="icon">
                                         <use xlink:href="#arrow-left"></use>
                                     </svg>
                                 </button>
-                                <button class="slider__button compilation__slider-button compilation__slider-button--next compilation__slider-button-next-js">
+                                <button class="slider__button compilation__slider-button compilation__slider-button--next compilation__slider-button-next-js" aria-label="Nex slide">
                                     <svg width="18px" height="18px" class="icon">
                                         <use xlink:href="#arrow-right"></use>
                                     </svg>
                                 </button>
                             </div>
                         </div>
-                    </div>
+                    </div> aria-label=""
                 </div>
             </div>
         </section>
@@ -779,12 +781,12 @@
                         </div>
                     </div>
                     <div class="products-slider__navigation">
-                        <button class="slider__button products-slider__button products-slider__button--prev products-slider__button-prev-js">
+                        <button class="slider__button products-slider__button products-slider__button--prev products-slider__button-prev-js" aria-label="Prev slide">
                             <svg width="18px" height="18px" class="icon">
                                 <use xlink:href="#arrow-left"></use>
                             </svg>
                         </button>
-                        <button class="slider__button products-slider__button products-slider__button--next products-slider__button-next-js">
+                        <button class="slider__button products-slider__button products-slider__button--next products-slider__button-next-js" aria-label="Next slide">
                             <svg width="18px" height="18px" class="icon">
                                 <use xlink:href="#arrow-right"></use>
                             </svg>

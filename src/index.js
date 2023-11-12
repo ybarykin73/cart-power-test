@@ -4,7 +4,7 @@ import './style.less'
 import 'swiper/css/bundle';
 
 $('.search__menu-button-js').click(function(){
-  $(this).next('.search__menu-list').toggleClass('active')
+  $(this).next('.search__menu-wrapper').toggleClass('active')
 });
 
 $('.search__wrapper-close-button-js').click(function(){

@@ -41,7 +41,7 @@
         position: absolute;
         top: calc(50% - 2px);
         right: 5px;
-        border-top: 6px solid #000;
+        border-top: 6px solid @primary-color;
         border-left: 6px solid transparent;
         border-right: 6px solid transparent;
       }
@@ -71,9 +71,9 @@
     top: 100%;
     left: 0;
     right: 0;
-    border: 1px solid #000;
-    border-radius: 4px;
-    background-color: #eee;
+    border: 1px solid @primary-color;
+    border-radius: @border-tiny-radius;
+    background-color: @background-secondary-color;
     display: none;
     padding: 10px 15px;
   }
@@ -85,12 +85,16 @@
 
     & + & {
       @media screen and (max-width: 992px) {
-        margin-left: 10px;
+        margin-inline-start: 10px;
       }
     }
   }
 
   &__item-link {
     color: inherit;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }

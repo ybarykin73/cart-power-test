@@ -1,5 +1,5 @@
 .compilation {
-  background-color: #eee;
+  background-color: @background-secondary-color;
   padding: 30px 0;
   margin-bottom: 30px;
 
@@ -77,7 +77,7 @@
   }
 
   &__list {
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid @primary-color;
     margin-bottom: 20px;
   }
 
@@ -92,6 +92,7 @@
     align-items: flex-end;
     font-size: 16px;
     color: #b0b0b0;
+    cursor: pointer;
   }
 
   &__item-price {
@@ -106,7 +107,7 @@
     }
 
     &:checked ~ div {
-      color: #000;
+      color: @primary-text-color;
     }
   }
 

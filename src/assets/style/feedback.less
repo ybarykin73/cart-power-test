@@ -1,3 +1,5 @@
+@feedback-primary-color: #00d6ff;
+
 .feedback {
   &__title {
     font-size: 30px;
@@ -11,7 +13,7 @@
   }
 
   &__help-text {
-    color: #00D6FF;
+    color: @feedback-primary-color;
   }
 
   &__form {
@@ -48,12 +50,12 @@
     top: 50%;
     left: 5px;
     transform: translateY(-50%);
-    fill: #00D6FF;
+    fill: @feedback-primary-color;
   }
 
   &__form-buttton {
     text-transform: uppercase;
-    border-radius: 4px;
+    border-radius: @border-tiny-radius;
     background-color: #fff;
     border: none;
     padding: 20px 0;

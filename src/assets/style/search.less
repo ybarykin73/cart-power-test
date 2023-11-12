@@ -4,7 +4,7 @@
   align-items: stretch;
   flex-basis: 560px;
   flex-grow: 0;
-  border-radius: 12px;
+  border-radius: @border-medium-radius;
 
   @media screen and (min-width: 560px) {
     position: relative;
@@ -21,16 +21,16 @@
   &__menu-button {
     border: none;
     font-size: 16px;
-    background-color: #000;
+    background-color: @primary-color;
     color: #fff;
     font-weight: 400;
     padding: 13px;
     padding-inline-start: 40px;
     position: relative;
-    border-radius: 3px;
+    border-radius: @border-tiny-radius;
 
     @media screen and (min-width: 560px) {
-      border-radius: 12px 0 0 12px;
+      border-radius: @border-medium-radius 0 0 @border-medium-radius;
     }
   }
 
@@ -40,26 +40,29 @@
     left: 15px;
   }
 
-  &__menu-list {
-    margin: 0;
+  &__menu-wrapper {
+    display: none;
     padding: 20px 10px;
-    background-color: #eee;
+    background-color: @background-secondary-color;
     position: absolute;
     top: 100%;
     right: 0;
     left: 0;
-    border-radius: 0 0 12px 12px;
-    display: none;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
+    border-radius: 0 0 @border-medium-radius @border-medium-radius;
 
     &.active {
-      display: grid;
+      display: block;
     }
   }
 
+  &__menu-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+
   &__menu-list-link {
-    color: #000;
+    color: @primary-text-color;
 
     &:hover {
       text-decoration: underline;
@@ -89,7 +92,7 @@
   }
 
   &__wrapper-close-button {
-    background-color: #eee;
+    background-color: @background-secondary-color;
     border: none;
     flex-shrink: 0;
     padding: 0 15px;
@@ -100,7 +103,7 @@
   }
 
   &__wrapper-mobile-open {
-    margin-left: auto;
+    margin-inline-start: auto;
     border: none;
     background-color: transparent;
 
@@ -122,10 +125,10 @@
     outline: none;
     padding: 0 20px;
     padding-inline-end: 44px;
-    border-radius: 3px;
+    border-radius: @border-tiny-radius;
 
     @media screen and (min-width: 560px) {
-      border-radius: 0 12px 12px 0;
+      border-radius: 0 @border-medium-radius @border-medium-radius 0;
     }
 
     &::placeholder {
