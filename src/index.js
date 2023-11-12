@@ -1,5 +1,7 @@
 import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules'
+import IMask from 'imask';
+
 import './style.less'
 import 'swiper/css/bundle';
 
@@ -88,3 +90,9 @@ const compilationSlider = new Swiper('#compilation-slider-js', {
     prevEl: '.compilation__slider-button-prev-js',
   }
 });
+
+const inputTel = document.getElementById('input-tel')
+const maskOptions = {
+  mask: '+{7}(000)000-00-00'
+};
+const mask = IMask(inputTel, maskOptions);
