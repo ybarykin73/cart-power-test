@@ -1,6 +1,9 @@
 @feedback-primary-color: #00d6ff;
 
 .feedback {
+  position: relative;
+  padding-bottom: 30px;
+
   &__title {
     font-size: 30px;
     text-transform: uppercase;
@@ -62,6 +65,27 @@
 
     @media (max-width: 992px) and (min-width: 560px) {
       grid-column: 1/4;
+    }
+  }
+
+  &__form-notifications {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+
+  &__form-notification {
+    display: none;
+    font-size: 16px;
+    margin: 0;
+
+    &--error {
+      color: #f00;
+    }
+
+    &--success {
+      color: #48ff00;
     }
   }
 }

@@ -804,14 +804,14 @@
          <div class="feedback">
             <h3 class="feedback__title">Сайт рыбатекст <br> поможет дизайнеру, верстальщику</h3>
             <p class="feedback__help-text">Оставьте заявку и мы пришлем вам ссылку</p>
-            <form class="feedback__form">
+            <form class="feedback__form" id="feedback-form">
                 <div class="feedback__form-item">
                     <div class="feedback__form-image">
                         <svg width="22px" height="22px" class="icon">
                             <use xlink:href="#form-user"></use>
                         </svg>
                     </div>
-                    <input class="feedback__form-input" placeholder="Ваше имя" type="text" name="">
+                    <input id="form-name" class="feedback__form-input" placeholder="Ваше имя" type="text" name="name" minlength="3" maxlength="20" required>
                 </div>
                 <div class="feedback__form-item">
                     <div class="feedback__form-image">
@@ -819,7 +819,7 @@
                             <use xlink:href="#form-phone"></use>
                         </svg>
                     </div>
-                    <input class="feedback__form-input" id="input-tel" placeholder="Ваш телефон" type="tel" name="">
+                    <input id="form-tel" class="feedback__form-input" placeholder="Ваш телефон" type="tel" name="" required>
                 </div>
                 <div class="feedback__form-item">
                     <div class="feedback__form-image">
@@ -827,10 +827,18 @@
                             <use xlink:href="#form-mail"></use>
                           </svg>
                     </div>
-                    <input class="feedback__form-input" placeholder="Ваша почта" type="email" name="">
+                    <input id="form-email" class="feedback__form-input" placeholder="Ваша почта" type="email" name="email" required>
                 </div>
                 <button class="feedback__form-buttton" type="submit" aria-label="feedback">Подписатся</button>
             </form>
+            <div class="feedback__form-notifications">
+                <p class="feedback__form-notification feedback__form-notification--error feedback__form-error-js">
+                    Ошибка! Одно из полей введено не правильно!
+                </p>
+                <p class="feedback__form-notification feedback__form-notification--success feedback__form-success-js">
+                    Отлично! Выша заявка была отправлена!
+                </p>
+            </div>
          </div>
          <div class="footer__body">
             <ul class="footer__menu">

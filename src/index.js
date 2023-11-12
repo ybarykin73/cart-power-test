@@ -1,6 +1,7 @@
 import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules'
 import IMask from 'imask';
+import validator from 'validator';
 
 import './style.less'
 import 'swiper/css/bundle';
@@ -91,8 +92,26 @@ const compilationSlider = new Swiper('#compilation-slider-js', {
   }
 });
 
-const inputTel = document.getElementById('input-tel')
+const inputTel = document.getElementById('form-tel')
 const maskOptions = {
-  mask: '+{7}(000)000-00-00'
+  mask: '{8}(000)000-00-00'
 };
 const mask = IMask(inputTel, maskOptions);
+
+const form = document.getElementById('feedback-form')
+
+form.addEventListener('submit', (env) => {
+  env.preventDefault();
+
+  $('.feedback__form-error-js, .feedback__form-success-js').hide()
+
+  const name = document.getElementById('form-name').value
+  const phone = document.getElementById('form-tel').value
+  const email = document.getElementById('form-email').value
+
+  if (!(validator.isAlpha(name, ['ru-RU'], {ignore: ' '}) && validator.isEmail(email) && validator.isMobilePhone(phone.replace(/[^0-9]/g, '')))) {
+    $('.feedback__form-error-js').fadeIn()
+  } else {
+    $('.feedback__form-success-js').fadeIn()
+  }
+})
