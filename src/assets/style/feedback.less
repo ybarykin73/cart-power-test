@@ -5,17 +5,20 @@
   padding-bottom: 30px;
 
   &__title {
-    font-size: 30px;
+    font-size: 20px;
+    font-weight: 500;
     text-transform: uppercase;
     margin: 0;
     margin-bottom: 15px;
 
     @media screen and (min-width: 560px) {
-      font-size: 40px;
+      font-size: 24px;
     }
   }
 
   &__help-text {
+    font-family: Lato, sans-serif;
+    font-size: @text-medium-size;
     color: @feedback-primary-color;
   }
 
@@ -25,7 +28,7 @@
 
     @media screen and (min-width: 560px) {
       grid-template-columns: repeat(3, 1fr);
-      grid-column-gap: 20px;
+      grid-column-gap: 80px;
     }
 
     @media screen and (min-width: 992px) {
@@ -44,8 +47,15 @@
     background-color: transparent;
     border-bottom: 1px solid #999;
     padding-inline-start: 40px;
+    font-family: Lato, sans-serif;
     color: #fff;
+    font-size: @text-medium-size;
     outline: none;
+
+    &:placeholder {
+      font-family: Lato, sans-serif;
+      font-size: @text-medium-size;
+    }
   }
 
   &__form-image {
@@ -61,7 +71,14 @@
     border-radius: @border-tiny-radius;
     background-color: #fff;
     border: none;
+    font-family: Lato, sans-serif;
+    font-size: 13px;
     padding: 20px 0;
+    transition: opacity 0.1 ease;
+
+    &:hover {
+      opacity: .8;
+    }
 
     @media (max-width: 992px) and (min-width: 560px) {
       grid-column: 1/4;

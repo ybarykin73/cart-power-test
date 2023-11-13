@@ -13,7 +13,6 @@
   }
 
   &__item {
-    font-weight: 500;
     color: #212121;
 
     & + & {
@@ -33,7 +32,7 @@
 
     @media screen and (min-width: 992px) {
       position: relative;
-      padding-inline-end: 25px;
+      padding-inline-end: 20px;
       cursor: pointer;
   
       &::after {
@@ -41,9 +40,9 @@
         position: absolute;
         top: calc(50% - 2px);
         right: 5px;
-        border-top: 6px solid @primary-color;
-        border-left: 6px solid transparent;
-        border-right: 6px solid transparent;
+        border-top: 4px solid @primary-color;
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
       }
 
       &:hover .submenu {

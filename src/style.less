@@ -8,6 +8,10 @@
 @border-medium-radius: 12px;
 @border-max-radius: 50%;
 
+@text-main-size: 12px;
+@text-medium-size: 16px;
+@text-big-size: 48px;
+
 *,::after,::before {
   box-sizing: border-box;
 }
@@ -15,6 +19,14 @@
 @font-face {
   font-family: 'Roboto';
   src: url('../src/assets/fonts/Roboto-Light.ttf');
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../src/assets/fonts/Roboto-Regular.ttf');
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -36,10 +48,19 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Lato';
+  src: url('../src/assets/fonts/Lato-Regular.ttf');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: Roboto, sans-serif;
+  font-size: @text-main-size;
   font-weight: 400;
 }
 
@@ -53,6 +74,7 @@ img {
 }
 
 button {
+  font-family: inherit;
   cursor: pointer;
 }
 
@@ -87,7 +109,7 @@ ul, ol {
 
   &--major {
     @media screen and (min-width: 786px) {
-      font-size: 50px;
+      font-size: @text-big-size;
     }
   }
 }

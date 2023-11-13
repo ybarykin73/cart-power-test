@@ -42,7 +42,6 @@
 
   &__menu-item {
     font-size: 18px;
-    font-weight: 400;
 
     & + & {
       @media screen and (max-width: 560px) {
@@ -76,16 +75,24 @@
   }
 
   &__contact-link {
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 300;
     color: #999;
 
     &:hover {
       text-decoration: underline;
     }
 
-    &--accent {
+    &--tel {
       color: #fff;
-      font-weight: 600;
+      font-size: @text-main-size;
+      font-weight: 700;
+    }
+
+    &--email {
+      color: #fff;
+      font-size: 14px;
+      font-weight: 700;
     }
   }
 }
@@ -100,5 +107,6 @@
 }
 
 .copy {
+  font-size: @text-medium-size;
   color: #999;
 }
